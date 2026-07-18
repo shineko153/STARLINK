@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: mybot
+    env: python
+    plan: free
+    pythonVersion: 3.11.5
+    buildCommand: |
+      pip install --upgrade pip
+      pip install -r requirements.txt
+    startCommand: python botone.py
